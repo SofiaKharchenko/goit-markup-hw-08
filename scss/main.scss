@@ -1,0 +1,18 @@
+@import 'base/normalize';
+@import './utils/placeholders';
+@import 'base/defaults';
+@import 'utils/variables';
+@import './components/common/common';
+@import './components/common/logo';
+@import './components/common/header';
+@import './components/common/footer';
+
+@import './components/studio/hero';
+@import './components/studio/form-order';
+@import './components/studio/advantages';
+@import './components/studio/we-doing';
+@import './components/studio/team';
+@import './components/studio/clients';
+
+@import './components/portfolio/portfolio-list';
+@import './components/portfolio/portfolio-cards';
