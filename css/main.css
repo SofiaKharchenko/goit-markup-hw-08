@@ -1370,33 +1370,56 @@ body {
   fill: currentColor;
 }
 
-.clients__svg {
-  fill: var(--clients-svg);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.section-client {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.section-clients {
   text-align: center;
+  background-color: white;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.clients__list {
+@media screen and (min-width: 1200px) {
+  .section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section__header-clients {
+  color: var(--black-text);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__header-clients {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+.clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -30px;
-  margin-top: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
-.clients__item {
-  margin-right: 30px;
+.clients-list__item {
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
-.clients__link {
+.clients-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1406,21 +1429,33 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 210px;
   height: 90px;
   color: #afb1b8;
   border-radius: 4px;
   border: 1px solid #afb1b8;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover, .clients__link:focus {
+.clients-list__link:hover, .clients-list__link:focus {
   color: var(--blue-text);
   border: 1px solid var(--blue-text);
 }
 
-.clients__svg {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-list__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list__link {
+    width: 170px;
+  }
+}
+
+.clients-list__svg {
   fill: currentColor;
 }
 
