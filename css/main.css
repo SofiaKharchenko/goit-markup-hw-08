@@ -365,9 +365,27 @@ textarea {
 }
 
 .container {
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    min-width: 320px;
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header {
@@ -381,8 +399,13 @@ textarea {
 
 .portfolio {
   background-color: white;
-  padding-top: 94px;
-  padding-bottom: 94px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .logo {
@@ -1086,6 +1109,12 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 768px) {
+  .we-doing {
+    display: none;
+  }
 }
 
 .advantages-img .we-doing__items {
