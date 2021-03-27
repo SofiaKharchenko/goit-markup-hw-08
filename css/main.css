@@ -1365,35 +1365,94 @@ body {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.section-header {
+.section__team {
+  background-color: var(--team-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section__header_team {
   color: var(--black-text);
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.section-team {
-  background-color: var(--team-background);
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+  .section__header_team {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
-.team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 50px;
+.team-list__thumb {
+  max-height: 460px;
 }
 
-.team-list .team-list__items {
-  -ms-flex-preferred-size: calc(100% / 4);
-      flex-basis: calc(100% / 4);
+@media screen and (min-width: 768px) {
+  .team-list__thumb {
+    height: 374px;
+  }
 }
 
-.team-list__items:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .team-list__thumb {
+    height: 260px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our_team-list {
+    margin-top: -30px;
+    margin-left: -30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.team-list__images {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team-list__items {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__items {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-list__items {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__items {
+    -ms-flex-preferred-size: calc(100% / 4 - 30px);
+        flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .team-list__names {
@@ -1403,8 +1462,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-list__profession {
@@ -1429,12 +1488,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 16px;
+}
+
+.team-contacts__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .team-contacts__link {
