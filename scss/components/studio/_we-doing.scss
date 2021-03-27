@@ -1,17 +1,17 @@
 .we-doing {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
+
+  background-color: white;
+  padding-top: 0;
+  padding-bottom: 94px;
 }
 .advantages-img .we-doing__items {
   flex-basis: calc(100% / 3);
   margin-top: 50px;
 }
-.we-doing {
-  background-color: white;
-  padding-top: 0;
-  padding-bottom: 94px;
-}
+
 .sect-header {
   color: var(--black-text);
   font-weight: 700;

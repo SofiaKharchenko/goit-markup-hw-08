@@ -1313,7 +1313,13 @@ body {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 768px) {
+.we-doing {
+  background-color: white;
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199px) {
   .we-doing {
     display: none;
   }
@@ -1323,12 +1329,6 @@ body {
   -ms-flex-preferred-size: calc(100% / 3);
       flex-basis: calc(100% / 3);
   margin-top: 50px;
-}
-
-.we-doing {
-  background-color: white;
-  padding-top: 0;
-  padding-bottom: 94px;
 }
 
 .sect-header {
